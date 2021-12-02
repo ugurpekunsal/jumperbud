@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "514509686861",
+    "project_id": "jumperbud-6df9c",
+    "storage_bucket": "jumperbud-6df9c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:514509686861:android:bc842f295ded2e9b7cb404",
+        "android_client_info": {
+          "package_name": "com.example.jumperbud"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "514509686861-5jibak57boovriaqcrppl260j9qbqt4f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6ClZuXobzHA46VQKyzVsttCQcHQMoNCU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "514509686861-5jibak57boovriaqcrppl260j9qbqt4f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
