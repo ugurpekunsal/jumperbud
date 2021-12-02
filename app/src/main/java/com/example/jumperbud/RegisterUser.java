@@ -25,7 +25,7 @@ public class RegisterUser extends AppCompatActivity implements View.OnClickListe
     private ImageView banner;
     private Button registerUser;
     private EditText editTextFullName, editTextAge, editTextEmail, editTextPassword;
-    private ProgressBar registerProgressBar;
+    private ProgressBar progressBar;
 
     private FirebaseAuth mAuth;
 
@@ -44,7 +44,7 @@ public class RegisterUser extends AppCompatActivity implements View.OnClickListe
         editTextEmail = (EditText) findViewById(R.id.email);
         editTextPassword = (EditText) findViewById(R.id.password);
 
-        registerProgressBar = (ProgressBar) findViewById(R.id.registerProgressBar);
+        progressBar = (ProgressBar) findViewById(R.id.registerProgressBar);
 
     }
 
@@ -102,7 +102,7 @@ public class RegisterUser extends AppCompatActivity implements View.OnClickListe
             return;
         }
 
-        registerProgressBar.setVisibility(View.VISIBLE);
+        progressBar.setVisibility(View.VISIBLE);
         mAuth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
@@ -116,19 +116,19 @@ public class RegisterUser extends AppCompatActivity implements View.OnClickListe
                                 public void onComplete(@NonNull Task<Void> task) {
                                     if (task.isSuccessful()) {
                                         Toast.makeText(RegisterUser.this, "User has been registered successfully!", Toast.LENGTH_LONG).show();
-                                        registerProgressBar.setVisibility(View.GONE);
+                                        progressBar.setVisibility(View.GONE);
                                         //redirect to login layout!
                                     }
                                     else {
                                         Toast.makeText(RegisterUser.this, "Failed to register! Try again!", Toast.LENGTH_LONG).show();
-                                        registerProgressBar.setVisibility(View.GONE);
+                                        progressBar.setVisibility(View.GONE);
                                     }
                                 }
                             });
                         }
                         else {
                             Toast.makeText(RegisterUser.this, "Failed to register! Try again!", Toast.LENGTH_LONG).show();
-                            registerProgressBar.setVisibility(View.GONE);
+                            progressBar.setVisibility(View.GONE);
                         }
                     }
                 });
