@@ -1,8 +1,10 @@
-package com.example.jumperbud;
+package com.jumperbud;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.jumperbud.R;
 
 public class ExerciseActivity extends AppCompatActivity {
 
