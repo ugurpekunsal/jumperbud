@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.jumperbud">
+    package="com.jumperbud">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
 
     <application
         android:allowBackup="true"
@@ -10,19 +15,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.JumperBud">
         <activity
-            android:name="com.jumperbud.ExerciseActivity"
+            android:name=".SettingsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_settings" />
+        <activity android:name=".motiondetection.MainActivity" />
+        <activity
+            android:name=".ExerciseActivity"
             android:exported="false" />
         <activity
-            android:name="com.jumperbud.ProfileActivity"
+            android:name=".ProfileActivity"
             android:exported="false" />
         <activity
-            android:name="com.jumperbud.HomeScreenActivity"
+            android:name=".HomeScreenActivity"
             android:exported="false" />
         <activity
-            android:name="com.jumperbud.RegisterActivity"
+            android:name=".RegisterActivity"
             android:exported="false" />
         <activity
-            android:name="com.jumperbud.LoginActivity"
+            android:name=".LoginActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.JumperBud.NoActionBar">
