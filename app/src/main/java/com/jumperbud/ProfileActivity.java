@@ -20,7 +20,6 @@ public class ProfileActivity extends AppCompatActivity {
 
     private FirebaseUser user;
     private DatabaseReference reference;
-
     private String userID;
 
     @Override

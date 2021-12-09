@@ -20,7 +20,8 @@ import java.util.TimerTask;
 public class ExerciseActivity extends AppCompatActivity {
     private TextView txtTime, txtJumps;
     private MotionDetector motionDetector;
-    private Button button_start, button_pause;
+    private Button button_purchase, button_start, button_pause, button_finish;
+    private ImageButton button_exit;
     private boolean pauseTimer = false;
     private int count = 0, jumps = 0;
     private Timer T;
@@ -30,8 +31,11 @@ public class ExerciseActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_exercise);
 
+        button_purchase = (Button) findViewById(R.id.button_purchase);
         button_start = (Button) findViewById(R.id.button_start);
         button_pause = (Button) findViewById(R.id.button_pause);
+        button_finish = (Button) findViewById(R.id.button_finish);
+        button_exit = (ImageButton) findViewById(R.id.button_exit);
         txtTime = (TextView) findViewById(R.id.txtTime);
         txtJumps = (TextView) findViewById(R.id.txtJumps);
         T = new Timer();
@@ -49,6 +53,20 @@ public class ExerciseActivity extends AppCompatActivity {
             @Override
             public void onTooDark() {
                 txtJumps.setText("Too dark here");
+            }
+        });
+
+        button_purchase.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+
+        button_exit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
             }
         });
 
@@ -78,6 +96,13 @@ public class ExerciseActivity extends AppCompatActivity {
             public void onClick(View v) {
                 button_start.setText("RESUME");
                 pauseTimer = true;
+            }
+        });
+
+        button_finish.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //implement finish
             }
         });
 

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/traningFragment">
+
+    <fragment
+        android:id="@+id/traningFragment"
+        android:name="com.jumperbud.TraningFragment"
+        android:label="fragment_traning"
+        tools:layout="@layout/fragment_training" />
+</navigation>

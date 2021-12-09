@@ -1,4 +1,4 @@
-package com.jumperbud;
+package com.jumperbud.loginandregister;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -18,6 +18,8 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.jumperbud.HomeScreenActivity;
+import com.jumperbud.R;
 
 import kotlin.Metadata;
 import org.jetbrains.annotations.Nullable;
