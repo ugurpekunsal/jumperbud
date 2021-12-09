@@ -15,6 +15,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.JumperBud">
         <activity
+            android:name=".ForgotPassword"
+            android:exported="false" />
+        <activity
             android:name=".StatisticsActivity"
             android:exported="false" />
         <activity
