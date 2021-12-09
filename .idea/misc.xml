@@ -5,6 +5,7 @@
       <map>
         <entry key="..\:/Git/JumperBud/app/src/main/res/drawable/ic_jumperbud_logo.xml" value="0.22543859649122808" />
         <entry key="..\:/Git/JumperBud/app/src/main/res/layout/activity_exercise.xml" value="0.3087719298245614" />
+        <entry key="..\:/Git/JumperBud/app/src/main/res/layout/activity_feedback.xml" value="0.3087719298245614" />
         <entry key="..\:/Git/JumperBud/app/src/main/res/layout/activity_forgot_password.xml" value="0.25" />
         <entry key="..\:/Git/JumperBud/app/src/main/res/layout/activity_home_screen.xml" value="0.21228070175438596" />
         <entry key="..\:/Git/JumperBud/app/src/main/res/layout/activity_login.xml" value="0.3087719298245614" />
@@ -15,6 +16,7 @@
         <entry key="..\:/Git/JumperBud/app/src/main/res/layout/activity_register.xml" value="0.3087719298245614" />
         <entry key="..\:/Git/JumperBud/app/src/main/res/layout/activity_register_user.xml" value="0.22" />
         <entry key="..\:/Git/JumperBud/app/src/main/res/layout/activity_statistics.xml" value="0.33" />
+        <entry key="..\:/Git/JumperBud/app/src/main/res/layout/activity_tutorial.xml" value="0.3087719298245614" />
         <entry key="..\:/Git/JumperBud/app/src/main/res/layout/fragment_second.xml" value="0.2957427536231884" />
         <entry key="..\:/Git/JumperBud/app/src/main/res/layout/settings_activity.xml" value="0.2118421052631579" />
         <entry key="..\:/Git/JumperBud/app/src/main/res/menu/menu_main.xml" value="0.20952380952380953" />

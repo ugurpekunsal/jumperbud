@@ -16,13 +16,13 @@
         android:layout_marginBottom="64dp"
         android:background="@android:color/transparent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button_tutorial"
+        app:layout_constraintEnd_toStartOf="@+id/button_feedback"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_statistics"
         app:srcCompat="@drawable/ic_baseline_settings_24" />
 
     <ImageButton
-        android:id="@+id/button_tutorial"
+        android:id="@+id/button_feedback"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginStart="32dp"
@@ -34,7 +34,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button_settings"
         app:layout_constraintTop_toBottomOf="@+id/button_exercise"
-        app:srcCompat="@drawable/ic_baseline_info_24" />
+        app:srcCompat="@drawable/ic_baseline_feedback_24" />
 
     <ImageButton
         android:id="@+id/button_logout"
@@ -75,7 +75,7 @@
         android:layout_marginEnd="64dp"
         android:layout_marginBottom="32dp"
         android:background="@android:color/transparent"
-        app:layout_constraintBottom_toTopOf="@+id/button_tutorial"
+        app:layout_constraintBottom_toTopOf="@+id/button_feedback"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button_statistics"
         app:layout_constraintTop_toBottomOf="@+id/button_profile"
@@ -157,7 +157,7 @@
         android:layout_marginEnd="8dp"
         android:text="Settings"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintEnd_toStartOf="@+id/button_tutorial"
+        app:layout_constraintEnd_toStartOf="@+id/button_feedback"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_settings" />
 
@@ -168,10 +168,10 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:text="Tutorial"
+        android:text="Feedback"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button_settings"
-        app:layout_constraintTop_toBottomOf="@+id/button_tutorial" />
+        app:layout_constraintTop_toBottomOf="@+id/button_feedback" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

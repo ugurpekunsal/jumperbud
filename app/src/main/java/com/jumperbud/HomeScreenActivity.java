@@ -11,7 +11,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class HomeScreenActivity extends AppCompatActivity {
 
-    private ImageButton logout, profile, statistics, exercise, settings, tutorial;
+    private ImageButton logout, profile, statistics, exercise, settings, feedback;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +23,7 @@ public class HomeScreenActivity extends AppCompatActivity {
         statistics = (ImageButton) findViewById(R.id.button_statistics);
         exercise = (ImageButton) findViewById(R.id.button_exercise);
         settings = (ImageButton) findViewById(R.id.button_settings);
-        tutorial = (ImageButton) findViewById(R.id.button_tutorial);
+        feedback = (ImageButton) findViewById(R.id.button_feedback);
 
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,10 +61,10 @@ public class HomeScreenActivity extends AppCompatActivity {
             }
         });
 
-        tutorial.setOnClickListener(new View.OnClickListener() {
+        feedback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(HomeScreenActivity.this, ProfileActivity.class));
+                startActivity(new Intent(HomeScreenActivity.this, FeedbackActivity.class));
             }
         });
     }
