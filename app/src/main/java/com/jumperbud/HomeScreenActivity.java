@@ -43,7 +43,7 @@ public class HomeScreenActivity extends AppCompatActivity {
         statistics.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(HomeScreenActivity.this, ProfileActivity.class));
+                startActivity(new Intent(HomeScreenActivity.this, StatisticsActivity.class));
             }
         });
 
