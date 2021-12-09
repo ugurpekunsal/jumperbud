@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeScreenActivity">
+    tools:context="com.jumperbud.HomeScreenActivity">
 
     <ImageButton
-        android:id="@+id/imageButton8"
+        android:id="@+id/button_settings"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginStart="64dp"
@@ -16,13 +16,13 @@
         android:layout_marginBottom="64dp"
         android:background="@android:color/transparent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton11"
+        app:layout_constraintEnd_toStartOf="@+id/button_tutorial"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton6"
+        app:layout_constraintTop_toBottomOf="@+id/button_statistics"
         app:srcCompat="@drawable/ic_baseline_settings_24" />
 
     <ImageButton
-        android:id="@+id/imageButton11"
+        android:id="@+id/button_tutorial"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginStart="32dp"
@@ -32,12 +32,12 @@
         android:background="@android:color/transparent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageButton8"
+        app:layout_constraintStart_toEndOf="@+id/button_settings"
         app:layout_constraintTop_toBottomOf="@+id/button_exercise"
         app:srcCompat="@drawable/ic_baseline_info_24" />
 
     <ImageButton
-        android:id="@+id/logout"
+        android:id="@+id/button_logout"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginStart="64dp"
@@ -45,14 +45,14 @@
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="32dp"
         android:background="@android:color/transparent"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton6"
-        app:layout_constraintEnd_toStartOf="@+id/profile"
+        app:layout_constraintBottom_toTopOf="@+id/button_statistics"
+        app:layout_constraintEnd_toStartOf="@+id/button_profile"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_baseline_exit_to_app_24" />
 
     <ImageButton
-        android:id="@+id/imageButton6"
+        android:id="@+id/button_statistics"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginStart="64dp"
@@ -60,10 +60,10 @@
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="32dp"
         android:background="@android:color/transparent"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton8"
+        app:layout_constraintBottom_toTopOf="@+id/button_settings"
         app:layout_constraintEnd_toStartOf="@+id/button_exercise"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logout"
+        app:layout_constraintTop_toBottomOf="@+id/button_logout"
         app:srcCompat="@drawable/ic_baseline_analytics_24" />
 
     <ImageButton
@@ -75,14 +75,14 @@
         android:layout_marginEnd="64dp"
         android:layout_marginBottom="32dp"
         android:background="@android:color/transparent"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton11"
+        app:layout_constraintBottom_toTopOf="@+id/button_tutorial"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageButton6"
-        app:layout_constraintTop_toBottomOf="@+id/profile"
+        app:layout_constraintStart_toEndOf="@+id/button_statistics"
+        app:layout_constraintTop_toBottomOf="@+id/button_profile"
         app:srcCompat="@drawable/ic_baseline_run_circle_24" />
 
     <ImageButton
-        android:id="@+id/profile"
+        android:id="@+id/button_profile"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginStart="32dp"
@@ -92,7 +92,7 @@
         android:background="@android:color/transparent"
         app:layout_constraintBottom_toTopOf="@+id/button_exercise"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/logout"
+        app:layout_constraintStart_toEndOf="@+id/button_logout"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_baseline_person_24" />
 
@@ -105,9 +105,9 @@
         android:layout_marginEnd="8dp"
         android:text="Logout"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintEnd_toStartOf="@+id/profile"
+        app:layout_constraintEnd_toStartOf="@+id/button_profile"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logout" />
+        app:layout_constraintTop_toBottomOf="@+id/button_logout" />
 
     <TextView
         android:id="@+id/textView3"
@@ -119,8 +119,8 @@
         android:text="Profile"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/logout"
-        app:layout_constraintTop_toBottomOf="@+id/profile" />
+        app:layout_constraintStart_toEndOf="@+id/button_logout"
+        app:layout_constraintTop_toBottomOf="@+id/button_profile" />
 
     <TextView
         android:id="@+id/textView4"
@@ -133,7 +133,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintEnd_toStartOf="@+id/button_exercise"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton6" />
+        app:layout_constraintTop_toBottomOf="@+id/button_statistics" />
 
     <TextView
         android:id="@+id/textView5"
@@ -145,7 +145,7 @@
         android:text="Exercise"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageButton6"
+        app:layout_constraintStart_toEndOf="@+id/button_statistics"
         app:layout_constraintTop_toBottomOf="@+id/button_exercise" />
 
     <TextView
@@ -157,9 +157,9 @@
         android:layout_marginEnd="8dp"
         android:text="Settings"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton11"
+        app:layout_constraintEnd_toStartOf="@+id/button_tutorial"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton8" />
+        app:layout_constraintTop_toBottomOf="@+id/button_settings" />
 
     <TextView
         android:id="@+id/textView7"
@@ -171,7 +171,7 @@
         android:text="Tutorial"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageButton8"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton11" />
+        app:layout_constraintStart_toEndOf="@+id/button_settings"
+        app:layout_constraintTop_toBottomOf="@+id/button_tutorial" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

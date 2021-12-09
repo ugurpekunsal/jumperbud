@@ -1,4 +1,4 @@
-package com.example.jumperbud;
+package com.jumperbud;
 
 public class User {
 
