@@ -3,11 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/my_nav"
-    app:startDestination="@id/traningFragment">
+    app:startDestination="@id/trainingFragment">
 
     <fragment
-        android:id="@+id/traningFragment"
-        android:name="com.jumperbud.TraningFragment"
-        android:label="fragment_traning"
+        android:id="@+id/trainingFragment"
+        android:name="com.jumperbud.admin.TrainingFragment"
+        android:label="fragment_training"
         tools:layout="@layout/fragment_training" />
 </navigation>

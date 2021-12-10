@@ -4,11 +4,11 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.jumperbud.databinding.RecyclerViewTrainingBinding
-import com.jumperbud.models.Order
+import com.jumperbud.models.TrainingSession
 
 class TrainingAdapter: RecyclerView.Adapter<TrainingAdapter.ViewHolder>() {
 
-    var orders = mutableListOf<Order>()
+    var trainingSessions = mutableListOf<TrainingSession>()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder(RecyclerViewTrainingBinding.inflate(LayoutInflater.from(parent.context), parent, false))
@@ -19,7 +19,7 @@ class TrainingAdapter: RecyclerView.Adapter<TrainingAdapter.ViewHolder>() {
     }
 
     override fun getItemCount(): Int {
-        return orders.size
+        return trainingSessions.size
     }
 
     inner class ViewHolder(val binding: RecyclerViewTrainingBinding): RecyclerView.ViewHolder(binding.root) {
