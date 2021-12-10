@@ -13,7 +13,7 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/text_view_name"
+            android:id="@+id/text_view_full_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-light"
@@ -23,7 +23,7 @@
             />
 
         <TextView
-            android:id="@+id/text_view_session"
+            android:id="@+id/text_view_trainer_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-light"
@@ -32,7 +32,31 @@
             android:text="123456789"
             android:layout_marginTop="14dp"
             android:layout_marginEnd="12dp"
-            android:layout_below="@+id/text_view_name"/>
+            android:layout_below="@+id/text_view_full_name"/>
+
+        <TextView
+            android:id="@+id/text_view_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:text="123456789"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="12dp"
+            android:layout_below="@+id/text_view_trainer_name"/>
+
+        <TextView
+            android:id="@+id/text_view_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:text="123456789"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="12dp"
+            android:layout_below="@+id/text_view_date"/>
 
     </RelativeLayout>
 

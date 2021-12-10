@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="#FFFFFF"
     android:orientation="vertical"
     tools:context=".admin.AddTrainingDialogFragment">
 
@@ -18,10 +19,10 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/input_layout_name"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        android:padding="10dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edit_text_full_name"
@@ -33,10 +34,10 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/input_layout_trainer_name"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        android:padding="10dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edit_text_trainer_name"
@@ -48,33 +49,33 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/input_layout_date"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        android:padding="10dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edit_text_date"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="date"
-            android:hint="Your preferred date" />
+            android:hint="Your preferred date"
+            android:inputType="date" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/input_layout_time"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        android:padding="10dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edit_text_time"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="time"
-            android:hint="Your preferred time" />
+            android:hint="Your preferred time"
+            android:inputType="time" />
 
     </com.google.android.material.textfield.TextInputLayout>
 

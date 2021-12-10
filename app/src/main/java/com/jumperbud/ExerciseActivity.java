@@ -1,6 +1,9 @@
 package com.jumperbud;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,8 +14,10 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.jumperbud.R;
+import com.jumperbud.admin.TrainingFragment;
 import com.jumperbud.motiondetection.motiondetection.MotionDetector;
 import com.jumperbud.motiondetection.motiondetection.MotionDetectorCallback;
+import com.jumperbud.admin.AddTrainingDialogFragment;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -58,8 +63,12 @@ public class ExerciseActivity extends AppCompatActivity {
 
         button_purchase.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                finish();
+            public final void onClick(View v) {
+                FragmentManager fm = getSupportFragmentManager();
+                FragmentTransaction ft = fm.beginTransaction();
+                Fragment fragment =new AddTrainingDialogFragment();
+                ft.add(android.R.id.content,fragment,"");
+                ft.commit();
             }
         });
 
